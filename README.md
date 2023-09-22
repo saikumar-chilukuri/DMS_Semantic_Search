@@ -1,1 +1,1 @@
-# DMS_Semantic_Search
+# DMS Semantic Search
