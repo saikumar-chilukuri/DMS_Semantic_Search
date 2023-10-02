@@ -1,4 +1,4 @@
-# DMS_Semantic_Search
+# DMS Semantic Search
 
 to run the chat
 
