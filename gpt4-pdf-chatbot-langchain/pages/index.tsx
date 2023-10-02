@@ -24,10 +24,10 @@ export default function Home() {
     pendingSourceDocs?: Document[];
   }>({
     messages: [
-      {
-        message: 'Hi, what would you like to learn about this document?',
-        type: 'apiMessage',
-      },
+      // {
+      //   message: 'Search Here ....',
+      //   type: 'apiMessage',
+      // },
     ],
     history: [],
   });

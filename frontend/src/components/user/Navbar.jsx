@@ -17,7 +17,7 @@ export default function Navbar() {
             <img src='./stack.jpg' alt='' className='h-10' />
           </Link>
 
-          <ul className='flex items-center space-x-4'>
+          <ul className='flex items-center space-x-6'>
             <li>
               <button
                 onClick={toggleTheme}
@@ -26,12 +26,21 @@ export default function Navbar() {
                 <BsFillSunFill className='text-secondary' size={24} />
               </button>
             </li>
-            <li>
+            {/* <li>
               <input
                 type='text'
                 className='border-2 border-dark-subtle p-1 rounded bg-transparent text-xl outline-none focus:border-white transition text-white'
                 placeholder='search...'
               />
+            </li> */}
+            {/* To add the chatbot here  */}
+            <li>
+              <Link
+                className='text-white font-semibold text-lg'
+                to='http://localhost:3000/'
+              >
+                Chatbot
+              </Link>
             </li>
             <li>
               {isLoggedIn ? (

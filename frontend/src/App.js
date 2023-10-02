@@ -8,6 +8,7 @@ import Signup from './components/auth/Signup';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
 import Navbar from './components/user/Navbar';
+// import Layout from '../../gpt4-pdf-chatbot-langchain/components/layout';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path='/auth/forget-password' element={<ForgetPassword />} />
         <Route path='/auth/reset-password' element={<ConfirmPassword />} />
         <Route path='*' element={<NotFound />} />
+        {/* <Route path='http://localhost:3000/' element={<Layout />} /> */}
       </Routes>
     </>
   );
