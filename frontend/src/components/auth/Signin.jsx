@@ -48,7 +48,7 @@ export default function Signin() {
 
   useEffect(() => {
     // we want to move our user to somewhere else
-    if (isLoggedIn) navigate('/');
+    if (isLoggedIn) window.location.href = 'http://localhost:3001/';
   }, [isLoggedIn]);
 
   return (

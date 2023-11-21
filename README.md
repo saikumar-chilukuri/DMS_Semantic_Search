@@ -21,6 +21,6 @@ This repo can load multiple PDF files\*\*
 2. Run the script `npm run ingest` to 'ingest' and embed your docs. If you run into errors troubleshoot below.
 
 3. Check Pinecone dashboard to verify your namespace and vectors have been added.
-
+ 
 to run
 `npm run dev `

@@ -4,36 +4,54 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="mx-auto flex flex-col space-y-4">
-      <header className="container sticky top-0 z-40 bg-white">
-        <div className="h-16 border-b border-b-slate-200 py-4">
-          <ul className="flex items-center space-x-4">
-            <li>
-              <nav className="ml-4 pl-6">
-                <a
-                  href="http://localhost:3001/"
-                  className="hover:text-slate-600 cursor-pointer"
+    <>
+      <div className="max-w-screen-2xl mx-auto p-2 bg-secondary shadow-sm shadow-gray-500">
+        <div className="p-2 m-auto">
+          <div className="flex justify-between items-center">
+            <ul className="flex items-center space-x-6">
+              <li>
+                <button className="text-white font-semibold text-xl" disabled>
+                  <img src="./stack.jpg" className="h-8" />
+                </button>
+              </li>
+              <li>
+                <button
+                  className="text-white font-semibold text-xl pb-2"
+                  disabled
                 >
-                  Home
-                </a>
-              </nav>
-            </li>
-            <li className="ml-4 pl-6 hover:text-slate-600 cursor-pointer">
-              <button onClick={() => alert('Upload Documents!!!')}>
-                Ask for Document
-              </button>
-            </li>
-            <li className="ml-4 pl-6 hover:text-slate-600 cursor-pointer">
-              <button onClick={() => alert('Logout!')}>Logout</button>
-            </li>
-          </ul>
+                  Semantic Search
+                </button>
+              </li>
+            </ul>
+
+            <ul className="flex items-center space-x-6">
+              <li>
+                <button className="text-white font-semibold text-base">
+                  Request A Document
+                </button>
+              </li>
+              <li>
+                <button
+                  className="text-white font-semibold text-base"
+                  onClick={() => {
+                    window.location.href = 'http://localhost:3000/';
+                  }}
+                >
+                  Logout
+                </button>
+              </li>
+              <li>
+                <button className="text-white font-semibold text-lg w-8"></button>
+              </li>
+            </ul>
+          </div>
         </div>
-      </header>
-      <div>
+      </div>
+      <div className="bg-gray-300">
         <main className="flex w-full flex-1 flex-col overflow-hidden">
           {children}
         </main>
       </div>
-    </div>
+    </>
   );
 }

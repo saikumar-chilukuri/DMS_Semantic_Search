@@ -123,10 +123,7 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <div className="mx-auto flex flex-col gap-4">
-          <h1 className="text-2xl font-bold leading-[1.1] tracking-tighter text-center">
-            Semantic Search
-          </h1>
+        <div className="mx-auto flex flex-col gap-10 border-gray-500">
           <main className={styles.main}>
             <div className={styles.cloud}>
               <div ref={messageListRef} className={styles.messagelist}>
@@ -137,8 +134,8 @@ export default function Home() {
                     icon = (
                       <Image
                         key={index}
-                        src="/bot-image.png"
-                        alt="AI"
+                        src="/OIP.jpg"
+                        alt="Gen AI"
                         width="40"
                         height="40"
                         className={styles.boticon}
@@ -151,7 +148,7 @@ export default function Home() {
                       <Image
                         key={index}
                         src="/usericon.png"
-                        alt="Me"
+                        alt="End User"
                         width="30"
                         height="30"
                         className={styles.usericon}

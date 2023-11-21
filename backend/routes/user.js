@@ -36,7 +36,7 @@ router.post('/create', nameValidator, validate, createUser);
  * @route /signin
  * @description To create the user
  */
-router.post('/signin', signInValidator, validate, signInUser);
+router.post('/sign-in', signInValidator, validate, signInUser);
 
 /**
  * @route /verify-email
@@ -57,11 +57,7 @@ router.post('/forget-password', forgotPassword);
 /**
  * @route /validate-password-resetToken
  */
-router.post(
-  '/verify-password-reset-token',
-  isValidPassResetToken,
-  sendTokenStatus
-);
+router.post('/verify-pass-reset-token', isValidPassResetToken, sendTokenStatus);
 
 /**
  * @route /reset-password

@@ -34,14 +34,14 @@ export default function Navbar() {
               />
             </li> */}
             {/* To add the chatbot here  */}
-            <li>
+            {/* <li>
               <Link
                 className='text-white font-semibold text-lg'
-                to='http://localhost:3000/'
+                to='http://localhost:3001/'
               >
                 Chatbot
               </Link>
-            </li>
+            </li> */}
             <li>
               {isLoggedIn ? (
                 <button
